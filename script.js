@@ -1,3 +1,5 @@
+//codigo utiliza jquery
+
 // Transicion de navbar
 $(document).ready(function(){
     $(window).scroll(function(){
@@ -6,5 +8,11 @@ $(document).ready(function(){
         }else{
             $('.navbar').removeClass("sticky");
         }
+    })
+
+    //Menu desplegable menu/navbar script
+    $('.menu-btn').click(function(){
+        $('.navbar .menu').toggleClass("active")
+        $('.menu-btn i').toggleClass("active")
     })
 })
