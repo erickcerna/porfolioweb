@@ -85,6 +85,8 @@
 .home{
     display: flex;
     background: url(images/portada.jpg) no-repeat center;
+    background-color: rgba(58, 57, 57, 0.856);
+    background-blend-mode: soft-light;
     background-size: cover;
     background-attachment: fixed;
     height: 100vh;
