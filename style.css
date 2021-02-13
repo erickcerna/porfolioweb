@@ -135,16 +135,12 @@
     background: none;
 }
 
-
-/* ***about section style*** */
-section{
+/* all similar content styling code */
+section {
     padding: 100px 0;
 }
-.about{
-    font-family: 'Poppins', sans-serif;
-}
 
-.about .title{
+section .title{
     position: relative;
     text-align: center;
     font-size: 40px;
@@ -154,7 +150,7 @@ section{
     font-family: 'Ubuntu', sans-serif;
 }
 
-.about .title::before{
+section .title::before{
     content: "";
     position: absolute;
     bottom: 0px;
@@ -165,8 +161,7 @@ section{
     transform: translateX(-50%);
 }
 
-.about .title::after{
-    content: "who i am";
+section .title::after{
     position: absolute;
     bottom: -12px;
     left: 50%;
@@ -177,7 +172,19 @@ section{
     transform: translateX(-50%);
 }
 
-.about .about-content{
+/* ***about section style*** */
+
+.about .services{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+.about .title::after{
+    content: "who i am";
+}
+
+.about .about-content, .services .serv-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -233,6 +240,55 @@ section{
 }
 
 
+/* ***services section styling*** */
+.services{
+    color: #fff;
+    background: #111;
+}
+
+.services .title::before{
+    background: #fff;
+}
+.services .title::after{
+    background: #111;
+    content: "what i provide";
+}
+
+.services .serv-content .card{
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.services .serv-content .card .box{
+    transition: all 0.3s ease;
+}
+
+.services .serv-content .card:hover{
+    background: crimson;
+}
+
+.services .serv-content .card:hover .box{
+    transform: scale(1.05);
+}
+.services .serv-content .card i{
+    font-size: 50px;
+    color: crimson;
+    transition: color 0.3s ease;
+}
+
+.services .serv-content .card:hover i{
+    color: #fff;
+}
+
+.services .serv-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0 ;
+}
 
 
 
