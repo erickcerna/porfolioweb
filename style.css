@@ -90,7 +90,7 @@
     background-blend-mode: soft-light;
     background-size: cover;
     background-attachment: fixed;
-    height: 100vh;
+    height: 75vh;
     color: #fff;
     min-height: 500px;
     font-family: 'Ubuntu', sans-serif;
@@ -298,6 +298,7 @@ section .title::after{
 
 
 /* ********Responsive Media query************  */
+
 @media(max-width:1300px){
     .home .max-width{
         margin-left: 0px;
@@ -378,6 +379,11 @@ section .title::after{
         flex: 100%;
     }
 
+    .services .serv-content .card{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+
     
 }
 
@@ -394,6 +400,10 @@ section .title::after{
     }
     .home .home-content a{
         font-size: 20px;
+    }
+
+    .services .serv-content .card{
+        width: 100%;
     }
 }
 
