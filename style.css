@@ -140,7 +140,7 @@ section {
     padding: 100px 0;
 }
 
-.about, .services, .skills, .teams, .contact{
+.about, .services, .skills, .teams, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
 
@@ -558,6 +558,20 @@ section .title::after{
     background: none;
 }
 
+/* footer section styling */
+footer{
+    background: #111;
+    padding: 20px 23px;
+    color: #fff;
+}
+
+footer span a{
+    color: crimson;
+}
+
+footer span a:hover{
+    text-decoration: underline;
+}
 
 
 /* **********************   Responsive Media query   *********************  */
