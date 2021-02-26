@@ -219,7 +219,7 @@ section .title::after{
 
 
 .about .title::after{
-    content: "who i am";
+    content: "¿quién soy?";
 }
 
 
@@ -286,7 +286,7 @@ section .title::after{
 .services .title::after,
 .teams .title::after{
     background: #111;
-    content: "what i provide";
+    content: "trabajo en";
 }
 
 .services .serv-content .card{
