@@ -413,9 +413,12 @@ section .title::after{
 }
 
 .skills-content .right .mysql::before{
-    width: 70%;
+    width: 60%;
 }
 
+.skills-content .right .en::before{
+    width: 50%;
+}
 
 /* teams section styling */
 .teams .title::after{

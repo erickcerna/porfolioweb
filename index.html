@@ -31,7 +31,7 @@
                 <li><a href="#home" class="menu-btn">Home</a></li>
                 <li><a href="#about" class="menu-btn">Acerca de</a></li>
                 <li><a href="#services" class="menu-btn">Servicios</a></li>
-                <li><a href="#skills" class="menu-btn">Habilidades</a></li>
+                <li><a href="#skills" class="menu-btn">Conocimientos</a></li>
                 <li><a href="#teams" class="menu-btn">Proyectos</a></li>
                 <li><a href="#contact" class="menu-btn">Contacto</a></li>
             </ul>
@@ -141,7 +141,7 @@
                 <div class="bars">
                     <div class="info">
                         <span>SQL</span>
-                        <span>70%</span>
+                        <span>60%</span>
                     </div>
                     <div class="line mysql"></div>
                 </div>
@@ -152,6 +152,14 @@
                         <span>70%</span>
                     </div>
                     <div class="line php"></div>
+                </div>
+
+                <div class="bars">
+                    <div class="info">
+                        <span>Ingles</span>
+                        <span>50%</span>
+                    </div>
+                    <div class="line en"></div>
                 </div>
 
                 
@@ -239,28 +247,36 @@
                 
                 <div class="column right">
                     <div class="text">Message me</div>
-                    <form action="#">
+                    <form action="https://postmail.invotes.com/send"
+                    method="post" id="email_form">
                         <div class="fields">
                             <div class="field name">
-                                <input type="text" placeholder="Name" required>
+                                <input type="text" name="extra_name" placeholder="Nombre" required>
                             </div>
                             <div class="field email">
-                                <input type="email" placeholder="Email" required>
+                                <input type="email" name="reply_to" placeholder="Email" required>
                             </div>
                         </div>
                         <div class="field">
-                            <input type="text" placeholder="Subject" required>
+                            <input type="text" name="subject" placeholder="Asunto" required>
                         </div>
                         <div class="field textarea">
-                            <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
+                            <textarea name="text" cols="30" rows="10" placeholder="Mensaje.." required></textarea>
+                            <input type="hidden" name="access_token" value="cd7n7ix1d66vpy6oo7z1ywhn" />
+                            <input type="hidden" name="success_url" value=".?message=Email+Successfully+Sent%21&isError=0" />
+                            <input type="hidden" name="error_url" value=".?message=Email+could+not+be+sent.&isError=1" />
                         </div>
                         <div class="button">
-                            <button type="submit">Send message</button>
+                            <button id="submit_form" type="submit">Enviar</button>
+                            <p>Powered by <a href="https://postmail.invotes.com" target="_blank">PostMail</a></p>
+                        </form>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
+       
+
     </section>
 
     <!-- footer section start -->
