@@ -422,7 +422,7 @@ section .title::after{
 
 /* teams section styling */
 .teams .title::after{
-    content: "who with me";
+    content: "web";
 }
 .teams .carousel .card{
     background: #222;
@@ -444,6 +444,12 @@ section .title::after{
 }
 .teams .carousel .card:hover .box{
     transform: scale(1.05);
+}
+.teams .carousel .card .box a{
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 5px 5px;
 }
 .teams .carousel .card .text{
     font-size: 25px;
@@ -487,7 +493,7 @@ section .title::after{
 /* ********contact section styling***** */
 
 .contact .title::after{
-    content: "get in touch";
+    content: "";
 }
 
 .contact .contact-content .column{
@@ -591,7 +597,7 @@ section .title::after{
 /* footer section styling */
 footer{
     background: #111;
-    padding: 15px 23px;
+    padding: 20px 23px;
     color: #fff;
     text-align: center;
 }
